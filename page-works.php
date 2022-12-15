@@ -16,7 +16,6 @@ get_header();
 <main id="main" class="site-main">
 
 <section class="workcontainer"></section>
-</section>
 </main>
 <script>
 let works;
@@ -47,14 +46,9 @@ klon.querySelector("article").addEventListener("click", ()=>{location.href="rest
 
     
 </script>
+
 </section>
 
 
 <?php
 get_footer();
-
-
-
-
-
-
