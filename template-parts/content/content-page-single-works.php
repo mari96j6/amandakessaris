@@ -1,10 +1,8 @@
 <article>
     <img class="pic" src="" alt="">
     <div>
-
-<h1>test</h1>
-        <h2>
-</div>
+    <h1>test</h1>
+    </div>
 <article>
 </main>
 <script>
@@ -12,7 +10,6 @@
 
     const dbUrl="https://mariusdesign.dk/kea/10_eksamensprojekt/amandakessaris/wp-json/wp/v2/work/"+<?php echo get_the_ID()?>";
     
-
     async function getJson (){
         const data = await fetch(dbUrl);
         work = await data.json();
@@ -29,6 +26,4 @@
     </script>
 
 </section>
-
-
 <?php

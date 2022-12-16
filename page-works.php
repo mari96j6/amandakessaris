@@ -5,10 +5,10 @@ get_header();
 
 <template>
     <article>
-        <img src="" alt="">
-        
-            <h2></h2>
-        
+    <div class="content">
+    <img src="" alt="">
+    <h2></h2>
+    </div>
     </article>
 </template>
 
@@ -20,6 +20,11 @@ get_header();
 <section class="workcontainer"></section>
 </main>
 <script>
+
+const btn = document.getElementById('btn');
+
+
+
 let works;
 let categories;
 let filterWork = "alle";
@@ -75,6 +80,76 @@ works.forEach(work=>{
 
     getJson();
 </script>
+
+<style>
+
+.workcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  max-width: 15rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#filtrering {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(232, 232, 232);
+  color: black;
+}
+
+@media (max-width: 782px){
+
+#filtrering {
+  display: flex;
+    flex-direction: column;
+}
+    button {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(232, 232, 232);
+  color: black;
+}
+
+.content {
+max-width: 15rem;
+margin: 1rem 0rem 0rem 0rem;
+text-align: center;
+}
+}
+
+</style>
 
 </section>
 
