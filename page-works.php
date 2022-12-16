@@ -67,7 +67,7 @@ works.forEach(work=>{
             let klon = temp.cloneNode(true).content;
             klon.querySelector("img").src = work.billede.guid;
             klon.querySelector("h2").textContent = work.title.rendered;
-            klon.querySelector("article").addEventListener("click", ()=>{location.href="single-work.html?id="+work._id})
+            klon.querySelector("article").addEventListener("click", ()=>{location.href=work.link;})
             container.appendChild(klon);
         }
         })
