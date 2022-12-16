@@ -91,7 +91,7 @@ works.forEach(work=>{
 
 .content {
   max-width: 15rem;
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: center;
 }
 
@@ -104,7 +104,6 @@ button {
   background-color: white;
   border: solid 1px black;
   color: black;
-
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -117,6 +116,20 @@ button:hover {
   background-color: rgb(232, 232, 232);
   color: black;
 }
+
+.elementor-button:active {
+    background-color: rgb(232, 232, 232);
+}
+
+.filtrering:active {
+    background-color: rgb(232, 232, 232);
+}
+
+
+button:active {
+    background-color: rgb(232, 232, 232);
+}
+
 
 @media (max-width: 782px){
 
@@ -124,30 +137,14 @@ button:hover {
   display: flex;
     flex-direction: column;
 }
-    button {
-  background-color: white;
-  border: solid 1px black;
-  color: black;
-
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-button:hover {
-  background-color: rgb(232, 232, 232);
-  color: black;
-}
 
 .content {
-max-width: 15rem;
+max-width: 100%;
 margin: 1rem 0rem 0rem 0rem;
 text-align: center;
 }
 }
+
 
 </style>
 
