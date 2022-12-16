@@ -6,9 +6,9 @@ get_header();
 <template>
     <article>
         <img src="" alt="">
-        <div>
-            <p></p>
-        </div>
+        
+            <h2></h2>
+        
     </article>
 </template>
 
@@ -38,7 +38,7 @@ opretKnapper();
     }
 function opretKnapper(){
     categories.forEach(cat=>{
-    document.querySelector(#"filtrering").innerHTML += <button class="filter" data-work="${cat.id}">${cat.name}</button>
+    document.querySelector("#filtrering").innerHTML += `<button class="filter" data-work="${cat.id}">${cat.name}</button>`
     })
 
     addEventListenerToButtons();
@@ -47,7 +47,7 @@ function opretKnapper(){
 
 function addEventListenerToButtons(){
     document.querySelectorAll("#filtrering button").forEach(elm =>{
-        elm.addEventListener("click, filtrering");
+        elm.addEventListener("click", filtrering);
     })
 };
 
@@ -60,20 +60,20 @@ visWorks();
     
 function visWorks(){
         let temp = document.querySelector("template");
-let container = document.querySelector("#workscontainer")
+let container = document.querySelector(".workcontainer")
 container.innerHTML = "";
 works.forEach(work=>{
     if (filterWork=="alle" || work.categories.includes(parseInt(filterWork))){
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("h2").textcontent = work.title.rendered;
             klon.querySelector("img").src = work.billede.guid;
-            klon.querySelector("article").addEventListener("click", ()=>{location.href="restdb-single.html?id="+work._id})
+            klon.querySelector("h2").textContent = work.title.rendered;
+            klon.querySelector("article").addEventListener("click", ()=>{location.href="single-work.html?id="+work._id})
             container.appendChild(klon);
         }
         })
     }
 
-    
+    getJson();
 </script>
 
 </section>

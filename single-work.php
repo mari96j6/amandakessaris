@@ -1,6 +1,6 @@
 <?php
 
-get_header();
+get_header(); 
 ?>
 
 <section id="primary" class="content-area">
@@ -9,14 +9,14 @@ get_header();
 <article>
     <img class="pic" src="" alt="">
     <div>
-        <p>
+        <h2>
 </div>
 <article>
 </main>
 <script>
     let work;
 
-    const dbUrl="https://mariusdesign.dk/kea/10_eksamensprojekt/amandakessaris/wp-json/wp/v2/work/"+<?php echo get_the_ID?>";
+    const dbUrl="https://mariusdesign.dk/kea/10_eksamensprojekt/amandakessaris/wp-json/wp/v2/work/"+<?php echo get_the_ID()?>";
     
     async function getJson (){
         const data = await fetch(dbUrl);
@@ -27,7 +27,7 @@ get_header();
     function visWorks() {
         console.log(work.billede.guid);
         document.querySelector(".pic").src = work.guid;
-        document.querySelector("p").textContent = work.beskrivelse;
+        document.querySelector("h2").textContent = work.beskrivelse;
     }
 
     getJson();
