@@ -7,7 +7,7 @@ get_header();
     <article>
     <div class="content">
     <img class="pic" src="" alt="">
-    <h2></h2>
+    <h4></h4>
     </div>
     </article>
 </template>
@@ -73,7 +73,7 @@ works.forEach(work=>{
     if (filterWork=="alle" || work.categories.includes(parseInt(filterWork))){
             let klon = temp.cloneNode(true).content;
             klon.querySelector("img").src = work.billede.guid;
-            klon.querySelector("h2").textContent = work.title.rendered;
+            klon.querySelector("h4").textContent = work.title.rendered;
             klon.querySelector("article").addEventListener("click", ()=>{location.href=work.link;})
             container.appendChild(klon);
         }

@@ -1,6 +1,6 @@
 <article>
-<a href="https://mariusdesign.dk/kea/10_eksamensprojekt/amandakessaris/amanda-kessaris-works/" >
-<button id="clickhere">Click Here To Come Back To WORKS</button>    
+<a href="https://mariusdesign.dk/kea/10_eksamensprojekt/amandakessaris/works-amanda-kessaris/" >
+<button id="clickhere">CLICK HERE TO COME BACK TO WORKS</button>    
 </a>
 
     <img class="pic" src="" alt="">
@@ -32,7 +32,7 @@
     function visWorks() {
         console.log(work.billede.guid);
         document.querySelector(".pic").src = work.billede.guid;
-        document.querySelector("h2").textContent = work.beskrivelse;
+        document.querySelector("h2").textContent = work.title.rendered;
     }
 
     getJson();
@@ -71,7 +71,6 @@ h2 {
    margin-bottom: 0rem;
    text-align: center;
    font-size: 0.75rem;
-   font-weight: 300; 
 }
 
 @media (max-width: 782px){
