@@ -6,7 +6,7 @@ get_header();
 <template>
     <article>
     <div class="content">
-    <img src="" alt="">
+    <img class="pic" src="" alt="">
     <h2></h2>
     </div>
     </article>
@@ -14,8 +14,10 @@ get_header();
 
 <section id="primary" class="content-area">
 <main id="main" class="site-main">
+  <h2>Amanda Kessaris Works</h2>
+  <p>Amanda is a young artist who, through her art, tackles topics such as feminism, equality and gender stereotypes. Her works explore the challenges and barriers that women still face in our society and show a strong will to create change and equality. Through the use of a variety of media, from drawing to installations, Amanda manages to create a unique and engaging visual dialogue that reaches out to both women and men. She is an artist who stands by her message and invites us all to think about how we can contribute to creating a more equal world.</p>
 <nav id="filtrering">
-    <button data-work="alle">Alle</button>
+    <button data-work="alle">ALL</button>
 </nav>
 <section class="workcontainer"></section>
 </main>
