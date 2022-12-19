@@ -144,6 +144,8 @@ button:active {
 max-width: 100%;
 margin: 1rem 0rem 0rem 0rem;
 text-align: center;
+padding-left: 1rem;
+padding-right: 1rem;
 }
 }
 
